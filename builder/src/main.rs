@@ -1,3 +1,5 @@
+// main.rs @ builder
+
 use std::path::PathBuf;
 
 const OVMF_CODE: &str = "/usr/share/edk2/x64/OVMF_CODE.4m.fd";

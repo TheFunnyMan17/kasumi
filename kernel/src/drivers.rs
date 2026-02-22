@@ -1,2 +1,2 @@
-// drivers.rs
+// drivers.rs @ kernel
 pub(crate) mod framebuffer;

@@ -1,4 +1,4 @@
-// main.rs
+// main.rs @ kernel
 
 #![no_std]
 #![no_main]
