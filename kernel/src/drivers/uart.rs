@@ -118,5 +118,8 @@ macro_rules! sprint {
 
 #[macro_export]
 macro_rules! sprintln {
-    ($($arg:tt)*) => { $crate::sprint!("{}\n", format_args!($($arg)*)) };
+    () => { $crate::sprint!("\n") };
+    ($fmt:literal $(, $arg:expr)*) => {
+        $crate::sprint!(concat!($fmt, "\n") $(, $arg)*)
+    };
 }
